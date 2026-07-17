@@ -1,0 +1,14 @@
+;; data/culture-tx.edn — DataScript tx-data derived from src/culture/facts.cljc
+;; `culture.facts/catalog` (ADR-2607171400 addendum 2, Wave 1 country-level).
+;; Same shape across every cloud-itonami-iso3166-* sibling. Do not hand-edit;
+;; regenerate from the catalog.
+
+[
+#:culture{:id "ben.dish.kuli-kuli", :name "Kuli-kuli", :country "BEN", :kind :dish, :summary "Peanut-based West African snack first made by the Nupe people of Nigeria; a popular snack in Benin, Nigeria, northern Cameroon and Ghana.", :url "https://en.wikipedia.org/wiki/Kuli-kuli", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:url "https://en.wikipedia.org/wiki/Akara", :id "ben.dish.akara", :kind :dish, :name-local "Àkàrà", :country "BEN", :retrieved-at "2026-07-17", :summary "Deep-fried fritter of cowpeas (black-eyed peas) originating in Yorubaland, the Yoruba region spanning parts of Nigeria, Benin and Togo.", :name "Akara", :url-provenance :wikipedia-en}
+#:culture{:id "ben.dish.amiwo", :name "Amiwo", :country "BEN", :kind :dish, :summary "Beninese dish of red corn dough, often made with tomato puree, onion and peppers.", :url "https://en.wikipedia.org/wiki/Beninese_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "ben.beverage.sodabi", :name "Sodabi", :country "BEN", :kind :beverage, :summary "Traditional West African liquor distilled from palm wine; the term is mainly used in Benin and Togo, where it holds an important place in daily life and religious practices.", :url "https://en.wikipedia.org/wiki/Sodabi", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "ben.product.wagasi", :name "Wagasi", :country "BEN", :kind :product, :summary "West African cheese made from cow's milk, commonly made in northern Benin and sold in abundance in Parakou.", :url "https://en.wikipedia.org/wiki/Wagasi", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "ben.festival.vaudoun-day", :name "Vaudoun Day", :country "BEN", :kind :festival, :summary "Public holiday of Benin observed on the second Friday in January, celebrating Vodoun practices and observances.", :url "https://en.wikipedia.org/wiki/Public_holidays_in_Benin", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "ben.heritage.royal-palaces-of-abomey", :name "Royal Palaces of Abomey", :country "BEN", :kind :heritage, :summary "Ten palaces of the Kingdom of Dahomey in Abomey, built between 1695 and 1900, inscribed by UNESCO on the World Heritage List in 1985.", :url "https://en.wikipedia.org/wiki/Royal_Palaces_of_Abomey", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+]
