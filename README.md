@@ -7,6 +7,31 @@
 
 AGPL-3.0-or-later.
 
+## Market-entry / statute catalogs
+
+Governed public-sector market-entry compliance actor, same architecture
+as `cloud-itonami-iso3166-jpn`/`-deu` (minus the JPN-specific `goyoukiki`
+bridge):
+
+- `src/marketentry/{facts,governor,phase,sim,operation,registry,store,
+  marketentryllm}.cljc` -- the actor. `facts.cljc` cites the Autorité de
+  Régulation des Marchés Publics (ARMP, Loi N°2020-26 du 29 septembre
+  2020), the Direction Nationale de Contrôle des Marchés Publics (DNCMP,
+  SIGMAP/marches-publics.bj), RCCM (Tribunal de Commerce, OHADA's Acte
+  Uniforme relatif au Droit Commercial Général) and IFU (Direction
+  Générale des Impôts, Décret N°2006-201). `governor.cljc`'s flagship
+  check independently recomputes Loi N°2020-26 Art. 77 al.3's mandatory
+  5% MPME bid-evaluation preference margin.
+- `src/statute/facts.cljc` -- general-law catalog: the OHADA Uniform Act
+  on Commercial Companies (AUSCGIE, directly applicable, no domestic
+  transposition act), the Code du Travail (Loi N°98-004), and the Code
+  du Numérique (Loi N°2017-20, creates the APDP data-protection
+  authority).
+
+Every citation is WebFetch/curl-verified against an official source
+(sgg.gouv.bj, ohada.org, armp.bj, justice.gouv.bj); see each namespace's
+docstring for the full research trail and any honestly-narrowed scope.
+
 ## Culture catalog
 
 Alongside the market-entry / statute catalogs, this repo carries a
