@@ -153,7 +153,7 @@
   entitled to, and a verified MPME being denied the preference it IS
   entitled to."
   [{:keys [claimed-evaluated-price] :as engagement}]
-  (not (== (double claimed-evaluated-price) (compute-evaluated-price engagement))))
+  (not (money= claimed-evaluated-price (compute-evaluated-price engagement))))
 
 (defn register-draft
   "Validate + construct the FILING-DRAFT registration DRAFT -- the
