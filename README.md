@@ -22,7 +22,7 @@ bridge):
   Générale des Impôts, Décret N°2006-201). `governor.cljc`'s flagship
   check independently recomputes Loi N°2020-26 Art. 77 al.3's mandatory
   5% MPME bid-evaluation preference margin.
-- `src/statute/facts.cljc` -- general-law catalog: the OHADA Uniform Act
+- `src/statute/facts.kotoba` -- general-law catalog: the OHADA Uniform Act
   on Commercial Companies (AUSCGIE, directly applicable, no domestic
   transposition act), the Code du Travail (Loi N°98-004), and the Code
   du Numérique (Loi N°2017-20, creates the APDP data-protection
@@ -40,7 +40,7 @@ Alongside the market-entry / statute catalogs, this repo carries a
 `com-junkawasaki/root`) — national dishes, protected products, beverages,
 crafts, festivals and heritage sites for Benin:
 
-- `src/culture/facts.cljc` — the catalog, source of truth (keyed by
+- `src/culture/facts.kotoba` — the catalog, source of truth (keyed by
   uppercase ISO3, mirroring `statute.facts`).
 - `schema/culture.edn` — DataScript schema.
 - `data/culture-tx.edn` — derived DataScript tx-data (regenerated from
